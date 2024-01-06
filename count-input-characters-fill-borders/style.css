@@ -1,0 +1,74 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+body::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#f3f5f5, #9c27b0);
+  filter: blur(10px);
+  clip-path: circle(22% at 30% 20%);
+}
+body::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#ff2871,rgba(255,40, 113, .2));
+  clip-path: circle(20% at 70% 90%);
+}
+div {
+  width: 300px;
+  margin: 20px auto;
+}
+input {
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border: 1px solid rgba(255, 255, 255, .05);
+  background: rgba(255, 255, 255, .05);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  backdrop-filter: blur(15px);
+  box-shadow: 5px 5px 30px rgba(0,0,0,.2)
+}
+input:focus {
+  outline: none;
+}
+.progress {
+  background-color: #fff;
+  height: 3px;
+  width: 0;
+  display: block;
+  position: relative;
+  z-index: 99;
+  top: -2px;
+  transition: 0.5s;
+}
+.count {
+  position: relative;
+  display: block;
+  text-align: right;
+  padding: 5px;
+  z-index: 99;
+}
+.zero {
+  font-weight: bold;
+  color: red;
+}
