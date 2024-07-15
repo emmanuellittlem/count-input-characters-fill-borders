@@ -11,4 +11,4 @@ input.oninput = function () {
   count.innerHTML == 0 ? count.classList.add("zero") : count.classList.remove("zero");
   // Set The Progress
   progress.style.width = `${(this.value.length * 100) / maxLength}%`;
-};.
+};..
