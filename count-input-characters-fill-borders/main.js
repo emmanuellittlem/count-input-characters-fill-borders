@@ -12,3 +12,4 @@ input.oninput = function () {
   // Set The Progress
   progress.style.width = `${(this.value.length * 100) / maxLength}%`;
 };..
+.
